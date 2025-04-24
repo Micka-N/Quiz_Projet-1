@@ -1,0 +1,23 @@
+# 🧱 Fichiers système macOS
+.DS_Store
+
+# 🔧 Paramètres VSCode
+.vscode/
+
+# 📁 Dossiers de dépendances (si tu fais du Node plus tard)
+node_modules/
+
+# 📦 Fichiers de logs éventuels
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# 📄 Fichiers temporaires système
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 💻 Fichiers swap ou temporaires
+*.swp
+*.tmp
+*.log
