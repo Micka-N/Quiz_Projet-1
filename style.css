@@ -149,16 +149,16 @@ button {
     border-radius: 50%;
   }
   
-  .fireflies span:nth-child(1) { top: 530%; left: -320%; animation-delay: 0s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #e4d0fa 0%, transparent 70%);}
+  .fireflies span:nth-child(1) { width: 13px; height: 13px; top: 430%; left: -220%; animation-delay: 0s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #e4d0fa 0%, transparent 70%);}
   .fireflies span:nth-child(2) { width: 10px; height: 10px; top: 30%; left: 270%; animation-delay: 0.5s; animation: glow2 4s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
   .fireflies span:nth-child(3) { top: -420%; left: 59%; animation-delay: 1s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #EDF9FA 0%, transparent 70%);}
-  .fireflies span:nth-child(4) { top: 70%; left: -190%; animation-delay: 1.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffe2fd 0%, transparent 70%);}
+  .fireflies span:nth-child(4) { width: 6px; height: 6px; top: 70%; left: -190%; animation-delay: 1.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffe2fd 0%, transparent 70%);}
   .fireflies span:nth-child(5) { top: -220%; left: -60%; animation-delay: 2s; animation: glow5 4s infinite ease-in-out; background: radial-gradient(circle, #e9d6ff 0%, transparent 70%);}
   .fireflies span:nth-child(6) { width: 10px; height: 10px; top: 80%; left: -110%; animation-delay: 2.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ecdaff 0%, transparent 70%);}
   .fireflies span:nth-child(7) { top: -440%; left: 340%; animation-delay: 3s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #f6eeff 0%, transparent 70%);}
   .fireflies span:nth-child(8) { width: 10px; height: 10px; top: -50%; left: 135%; animation-delay: 3.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffffff 0%, transparent 70%);}
-  .fireflies span:nth-child(9) { top: -280%; left: -225%; animation-delay: 4s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
-  .fireflies span:nth-child(10) {top: 0%; left: 104%; animation-delay: 4.5s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .fireflies span:nth-child(9) { width: 8px; height: 8px; top: -280%; left: -225%; animation-delay: 4s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .fireflies span:nth-child(10) { top: 0%; left: 104%; animation-delay: 4.5s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
   
 
   @keyframes glow1 {
