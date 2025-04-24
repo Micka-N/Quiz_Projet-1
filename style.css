@@ -1,0 +1,138 @@
+*,
+*::before, 
+*::after{
+/* 1️⃣Empêche le padding et border d'affecter la largeur/hauteur */    
+    box-sizing: border-box;
+}            
+/* 2️⃣ Supprimer les marges et paddings par défaut */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3️⃣ Supprimer la décoration des listes et liens */
+ul, ol {
+    list-style: none; /* Supprime les puces des listes */
+}
+
+a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: inherit; /* Les liens prennent la couleur du texte parent */
+}
+
+/* 4️⃣ Assurer une typographie cohérente */
+body {
+    font-family: 'Gloock', Arial, sans-serif; /* Change selon le projet */
+    font-size: 16px; /* Base cohérente */
+    line-height: 1.5; /* Espacement optimal entre les lignes */
+}
+
+/* 5️⃣ Éviter les débordements sur petits écrans */
+html, body {
+    width: 100%; 
+    overflow-x: hidden;/* Empêche les barres de scroll horizontales */
+    scroll-behavior: smooth;
+}
+
+/* 6️⃣ Améliorer l'accessibilité et le focus */
+button, input, textarea {
+    font-family: inherit; /* Garde la même police que le reste du site */
+}
+:focus {
+    outline: none; /* Supprime l’outline par défaut (attention à ajouter un style focus personnalisé) */
+}
+/* 
+🔧📌 ADAPTATIONS POSSIBLES (5% des cas) 🔧📌
+
+1️⃣ FONTES → Si le projet a une charte stricte, remplace `font-family: Arial, sans-serif;` 
+   Ex: `font-family: 'Roboto', sans-serif;`
+
+2️⃣ FOCUS → Pour l'accessibilité, personnalise le `outline` au lieu de le supprimer.
+   Ex: `:focus { outline: 2px solid #ff385c; border-radius: 5px; }`
+
+3️⃣ SCROLL HORIZONTAL → Si le site utilise des carrousels ou tableaux larges, 
+   supprime `overflow-x: hidden;` de `html, body`.
+
+4️⃣ LISTES → Si tu veux garder des puces sur certains `ul`, applique `list-style: disc;` 
+   uniquement aux listes concernées.
+
+5️⃣ FORMULAIRES → Pour styliser les inputs et boutons de manière homogène,
+   ajuste `button, input, textarea` selon le design du projet.
+
+💡 👉 Ces modifications ne sont à faire que si nécessaires, sinon la base couvre 95% des besoins !
+
+ PATTERN MAIL: pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,15}"
+               + aria-required="true" (oblig + vocalisé) */
+/* 
+███████████████████████████████████████████████████████████████████████
+            🎯🎯🎯 FIN DU COMMENTAIRE - REPÈRE VISUEL 🎯🎯🎯
+███████████████████████████████████████████████████████████████████████
+███████████████████████████████████████████████████████████████████████
+███████████████████████████████████████████████████████████████████████
+███████████████████████████████████████████████████████████████████████
+*/
+
+/*  body: min-height:100vh pour la plupart des cas 
+    sinon height: 100vh  */
+
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #3f3d3d;
+    background-image: url(Ressources/Images/mushrooms-forest.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+button {
+    height: 50px;
+    margin: 5px;
+    width: 120px;
+    background: #333;
+    -webkit-box-pack: center;
+    font-family: 'Cinzel', serif;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid #404c5d 1px;
+    font-size: 14px;
+    color: rgb(161, 161, 161);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  }
+  
+  button:hover {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  
+  button:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
+  
