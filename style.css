@@ -141,51 +141,47 @@ button {
     position: relative;
     display: inline-block;
   }
-  
-  .fireflies {
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
+    
   .fireflies span {
     position: absolute;
     width: 6px;
     height: 6px;
-    background: radial-gradient(circle, #F9EEF7 0%, transparent 70%);
     border-radius: 50%;
-    opacity: 0;
-    animation: glow 2s infinite ease-in-out;
-    transition: opacity 0.3s ease;
   }
   
-  .fireflies span:nth-child(1) { top: 530%; left: -320%; animation-delay: 0s; }
-  .fireflies span:nth-child(2) { width: 10px; height: 10px; top: 30%; left: 270%; animation-delay: 0.5s; }
-  .fireflies span:nth-child(3) { top: -420%; left: 59%; animation-delay: 1s; }
-  .fireflies span:nth-child(4) { top: 70%; left: -190%; animation-delay: 1.5s; }
-  .fireflies span:nth-child(5) { top: -220%; left: -60%; animation-delay: 2s; }
-  .fireflies span:nth-child(6) { width: 10px; height: 10px; top: 80%; left: -110%; animation-delay: 2.5s; }
-  .fireflies span:nth-child(7) { top: -440%; left: 340%; animation-delay: 3s; }
-  .fireflies span:nth-child(8) { width: 10px; height: 10px; top: -50%; left: 135%; animation-delay: 3.5s; }
-  .fireflies span:nth-child(9) { top: -280%; left: -225%; animation-delay: 4s; }
-  .fireflies span:nth-child(10) {top: 0%; left: 104%; animation-delay: 4.5s; }
+  .fireflies span:nth-child(1) { top: 530%; left: -320%; animation-delay: 0s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #e4d0fa 0%, transparent 70%);}
+  .fireflies span:nth-child(2) { width: 10px; height: 10px; top: 30%; left: 270%; animation-delay: 0.5s; animation: glow2 4s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .fireflies span:nth-child(3) { top: -420%; left: 59%; animation-delay: 1s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #EDF9FA 0%, transparent 70%);}
+  .fireflies span:nth-child(4) { top: 70%; left: -190%; animation-delay: 1.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffe2fd 0%, transparent 70%);}
+  .fireflies span:nth-child(5) { top: -220%; left: -60%; animation-delay: 2s; animation: glow5 4s infinite ease-in-out; background: radial-gradient(circle, #e9d6ff 0%, transparent 70%);}
+  .fireflies span:nth-child(6) { width: 10px; height: 10px; top: 80%; left: -110%; animation-delay: 2.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ecdaff 0%, transparent 70%);}
+  .fireflies span:nth-child(7) { top: -440%; left: 340%; animation-delay: 3s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #f6eeff 0%, transparent 70%);}
+  .fireflies span:nth-child(8) { width: 10px; height: 10px; top: -50%; left: 135%; animation-delay: 3.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffffff 0%, transparent 70%);}
+  .fireflies span:nth-child(9) { top: -280%; left: -225%; animation-delay: 4s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .fireflies span:nth-child(10) {top: 0%; left: 104%; animation-delay: 4.5s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
   
-  /* Effet visible uniquement au hover du bouton */
-  #start-btn:hover ~ .fireflies span {
-    opacity: 1;
+
+  @keyframes glow1 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+    50% { transform: translate(3px, -2px) scale(1.2); opacity: 1; }
   }
   
-  /* Animation de scintillement doux */
-  @keyframes glow {
-    0%, 100% {
-      transform: scale(1);
-      opacity: 0.2;
-    }
-    50% {
-      transform: scale(1.4);
-      opacity: 1;
-    }
+  @keyframes glow2 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.2; }
+    50% { transform: translate(-4px, 2px) scale(1.1); opacity: 0.8; }
+  }
+  
+  @keyframes glow3 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.1; }
+    50% { transform: translate(2px, 3px) scale(1.3); opacity: 1; }
+  }
+  
+  @keyframes glow4 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+    50% { transform: translate(-2px, -3px) scale(1.2); opacity: 0.9; }
+  }
+  
+  @keyframes glow5 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.2; }
+    50% { transform: translate(1px, -4px) scale(1.15); opacity: 0.7; }
   }
