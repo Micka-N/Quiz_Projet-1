@@ -8,7 +8,8 @@
     <title>Projet_Quiz</title>
 </head>
 <body>
-    <div class="button-container">
+    <!-- class="button-container" = Wall d'accueil + BTN d'accueil + lucioles + cadre aux 12 questions -->
+    <div class="button-container">  
             <button id="start-btn">Commencer l’aventure</button>
             <div class="fireflies">
                 <span></span>
@@ -21,7 +22,29 @@
                 <span></span>
                 <span></span>
                 <span></span>
+                <span></span>
+                <span></span>
             </div>
     </div>
+    <!--id="bloc-quiz" class="hidden" = Wall arbres + Bloc support questions avec par dessus questions et le bloc de réponses  -->
+    <main id="bloc-quiz" class="hidden">
+        <section class="carte-question"> <!--Bloc support -->
+            <p id="texte-question">La question s'affichera ici</p>
+            <div class="bloc-réponses"> <!--Bloc des 4 btns réponses-->
+                <button class="bouton-reponse">Réponse 1</button>
+                <button class="bouton-reponse">Réponse 1</button>
+                <button class="bouton-reponse">Réponse 1</button>
+                <button class="bouton-reponse">Réponse 1</button>
+            </div>
+        </section>
+        <div class="brume"></div>
+    </main>
+    <!--   id="bloc-resultats" class="hidden" = titre résultat + description du résultat + un bouton "rejouer"  -->
+    <section id="bloc-resultats" class="hidden">
+        <h2 id="titre-resultat">Tu es ...</h2>
+        <p id="description-resultat">Description du profil</p>
+        <button id="bouton-rejouer">Rejouer</button>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

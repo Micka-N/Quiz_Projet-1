@@ -29,7 +29,8 @@ body {
 
 /* 5️⃣ Éviter les débordements sur petits écrans */
 html, body {
-    width: 100%; 
+    width: 100%;
+    overflow-y: hidden;
     overflow-x: hidden;/* Empêche les barres de scroll horizontales */
     scroll-behavior: smooth;
 }
@@ -77,13 +78,9 @@ button, input, textarea {
 
 
 body {
+    border: 1px solid red;
     min-height: 100vh;
     width: 100%;
-    background-color: #3f3d3d;
-    background-image: url(Ressources/Images/mushrooms-forest.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     color: #141414;
     display: flex;
     flex-direction: column;
@@ -139,26 +136,36 @@ button {
 
   .button-container {
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Ressources/Images/mushrooms-forest.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
     
   .fireflies span {
+    border: 4px solid red;
     position: absolute;
     width: 6px;
     height: 6px;
     border-radius: 50%;
   }
   
-  .fireflies span:nth-child(1) { width: 13px; height: 13px; top: 430%; left: -220%; animation-delay: 0s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #e4d0fa 0%, transparent 70%);}
-  .fireflies span:nth-child(2) { width: 10px; height: 10px; top: 30%; left: 270%; animation-delay: 0.5s; animation: glow2 4s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
-  .fireflies span:nth-child(3) { top: -420%; left: 59%; animation-delay: 1s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #EDF9FA 0%, transparent 70%);}
-  .fireflies span:nth-child(4) { width: 6px; height: 6px; top: 70%; left: -190%; animation-delay: 1.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffe2fd 0%, transparent 70%);}
-  .fireflies span:nth-child(5) { top: -220%; left: -60%; animation-delay: 2s; animation: glow5 4s infinite ease-in-out; background: radial-gradient(circle, #e9d6ff 0%, transparent 70%);}
-  .fireflies span:nth-child(6) { width: 10px; height: 10px; top: 80%; left: -110%; animation-delay: 2.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ecdaff 0%, transparent 70%);}
-  .fireflies span:nth-child(7) { top: -440%; left: 340%; animation-delay: 3s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #f6eeff 0%, transparent 70%);}
-  .fireflies span:nth-child(8) { width: 10px; height: 10px; top: -50%; left: 135%; animation-delay: 3.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffffff 0%, transparent 70%);}
-  .fireflies span:nth-child(9) { width: 8px; height: 8px; top: -280%; left: -225%; animation-delay: 4s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
-  .fireflies span:nth-child(10) { top: 0%; left: 104%; animation-delay: 4.5s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .fireflies span:nth-child(1) { width: 13px; height: 13px; top: 43%; left: 60%; animation-delay: 0s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #e4d0fa 0%, transparent 70%);}
+  .fireflies span:nth-child(2) { width: 10px; height: 10px; top: 30%; left: 70%; animation-delay: 0.5s; animation: glow2 4s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .fireflies span:nth-child(3) { top: 42%; left: 59%; animation-delay: 1s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #EDF9FA 0%, transparent 70%);}
+  .fireflies span:nth-child(4) { width: 6px; height: 6px; top: 430%; left: -190%; animation-delay: 1.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffe2fd 0%, transparent 70%);}
+  .fireflies span:nth-child(5) { top: 20%; left: 60%; animation-delay: 2s; animation: glow5 4s infinite ease-in-out; background: radial-gradient(circle, #e9d6ff 0%, transparent 70%);}
+  .fireflies span:nth-child(6) { width: 10px; height: 10px; top: 80%; left: 99%; animation-delay: 2.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ecdaff 0%, transparent 70%);}
+  .fireflies span:nth-child(7) { top: 44%; left: 34%; animation-delay: 3s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #f6eeff 0%, transparent 70%);}
+  .fireflies span:nth-child(8) { width: 10px; height: 10px; top: 50%; left: 35%; animation-delay: 3.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffffff 0%, transparent 70%);}
+  .fireflies span:nth-child(9) { width: 8px; height: 8px; top: 28%; left: 25%; animation-delay: 4s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .fireflies span:nth-child(10) { top: 5%; left: 104%; animation-delay: 4.5s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
   
 
   @keyframes glow1 {
@@ -184,4 +191,63 @@ button {
   @keyframes glow5 {
     0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.2; }
     50% { transform: translate(1px, -4px) scale(1.15); opacity: 0.7; }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .hidden {
+    display: none;
+  }
+
+  #bloc-quiz {
+    border: 3px solid green;
+    background-image:url(Ressources/Images/pine-forest.jpg);
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    overflow-y: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #bloc-quiz.visible {
+    opacity: 1;
+  }
+
+  .brume {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    background-image: url(Ressources/Images/smoke.png);
+    background-position: center;
+    background-size: cover;
+    animation: bougerBrume 12s infinite linear;
+    pointer-events: none;
+  }
+
+  @keyframes bougerBrume {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(18px); }
+    100% { transform: translateY(0); }
+  }
+
+  .carte-question {
+    z-index: 5;
+    border: 3px solid blue;
   }
