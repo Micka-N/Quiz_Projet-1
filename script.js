@@ -1,7 +1,7 @@
 
 const boutonDemarrer = document.getElementById("start-btn");
-const accueil = document.querySelector(".button-container");
-const quiz = document.getElementById("bloc-quiz");
+const accueil = document.querySelector(".page-accueil-container");
+const quiz = document.getElementById("page-quiz-container");
 
 boutonDemarrer.addEventListener("click", () => {
     accueil.classList.add("hidden");

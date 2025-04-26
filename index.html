@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>Projet_Quiz</title>
 </head>
 <body>
-    <!-- class="button-container" = Wall d'accueil + BTN d'accueil + lucioles + cadre aux 12 questions -->
-    <div class="button-container">  
-            <button id="start-btn">Commencer l’aventure</button>
-            <div class="fireflies">
-                <span></span>
-                <span></span>
+    <!-- class="page-accueil-container" = Wall d'accueil + BTN d'accueil + lucioles + cadre aux 12 questions -->
+    <div class="page-accueil-container">  
+            <button id="start-btn">Commencer l’ aventure</button>
+            <div class="lucioles">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -26,15 +25,16 @@
                 <span></span>
             </div>
     </div>
-    <!--id="bloc-quiz" class="hidden" = Wall arbres + Bloc support questions avec par dessus questions et le bloc de réponses  -->
-    <main id="bloc-quiz" class="hidden">
-        <section class="carte-question"> <!--Bloc support -->
-            <p id="texte-question">La question s'affichera ici</p>
-            <div class="bloc-réponses"> <!--Bloc des 4 btns réponses-->
-                <button class="bouton-reponse">Réponse 1</button>
-                <button class="bouton-reponse">Réponse 1</button>
-                <button class="bouton-reponse">Réponse 1</button>
-                <button class="bouton-reponse">Réponse 1</button>
+    <!--id="page-quiz-container" class="hidden" = Wall arbres + Bloc support questions avec par dessus questions et le bloc de réponses  -->
+    <main id="page-quiz-container" class="hidden">
+        <section class="bloc-questionreponse"> <!--Bloc support -->
+            <h2 id="titre-question">✧ Question 1 ✧</h2>
+            <p id="texte-question">Tu es en plein coeur d'une forêt par temps brumeux et tu entends un bruit d'animal sauvage ! Que fais-tu ?</p>
+            <div class="bloc-reponses"> <!--Bloc des 4 btns réponses-->
+                <button class="bouton-reponse">Je m'allonge et je fais le mort</button>
+                <button class="bouton-reponse">Je cours et cries en même temps !</button>
+                <button class="bouton-reponse">Je met ma garde et attends le combat!</button>
+                <button class="bouton-reponse">Je monte à l'arbre le plus proche !</button>
             </div>
         </section>
         <div class="brume"></div>

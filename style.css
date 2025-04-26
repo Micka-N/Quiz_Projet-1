@@ -22,7 +22,7 @@ a {
 
 /* 4️⃣ Assurer une typographie cohérente */
 body {
-    font-family: 'Gloock', Arial, sans-serif; /* Change selon le projet */
+    font-family: 'Cinzel', Arial,sans-serif; /* Change selon le projet */
     font-size: 16px; /* Base cohérente */
     line-height: 1.5; /* Espacement optimal entre les lignes */
 }
@@ -78,7 +78,6 @@ button, input, textarea {
 
 
 body {
-    border: 1px solid red;
     min-height: 100vh;
     width: 100%;
     color: #141414;
@@ -88,11 +87,11 @@ body {
     align-items: center;
 }
 
-button {
+#start-btn {
     z-index: 999;
     height: 50px;
     margin: 5px;
-    width: 120px;
+    width: 130px;
     background: #333;
     -webkit-box-pack: center;
     font-family: 'Cinzel', serif;
@@ -115,7 +114,7 @@ button {
       inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
   }
   
-  button:hover {
+  #start-btn:hover {
     -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
     box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
     color: #d6d6d6;
@@ -123,7 +122,7 @@ button {
     transition: 500ms;
   }
   
-  button:active {
+  #start-btn:active {
     -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
     box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
     color: #d6d6d6;
@@ -134,7 +133,7 @@ button {
   /*     TOUT LE HAUT VALIDE        */
 
 
-  .button-container {
+  .page-accueil-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -148,24 +147,23 @@ button {
     background-repeat: no-repeat;
   }
     
-  .fireflies span {
-    border: 4px solid red;
+  .lucioles span {
     position: absolute;
     width: 6px;
     height: 6px;
     border-radius: 50%;
   }
   
-  .fireflies span:nth-child(1) { width: 13px; height: 13px; top: 43%; left: 60%; animation-delay: 0s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #e4d0fa 0%, transparent 70%);}
-  .fireflies span:nth-child(2) { width: 10px; height: 10px; top: 30%; left: 70%; animation-delay: 0.5s; animation: glow2 4s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
-  .fireflies span:nth-child(3) { top: 42%; left: 59%; animation-delay: 1s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #EDF9FA 0%, transparent 70%);}
-  .fireflies span:nth-child(4) { width: 6px; height: 6px; top: 430%; left: -190%; animation-delay: 1.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffe2fd 0%, transparent 70%);}
-  .fireflies span:nth-child(5) { top: 20%; left: 60%; animation-delay: 2s; animation: glow5 4s infinite ease-in-out; background: radial-gradient(circle, #e9d6ff 0%, transparent 70%);}
-  .fireflies span:nth-child(6) { width: 10px; height: 10px; top: 80%; left: 99%; animation-delay: 2.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ecdaff 0%, transparent 70%);}
-  .fireflies span:nth-child(7) { top: 44%; left: 34%; animation-delay: 3s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #f6eeff 0%, transparent 70%);}
-  .fireflies span:nth-child(8) { width: 10px; height: 10px; top: 50%; left: 35%; animation-delay: 3.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffffff 0%, transparent 70%);}
-  .fireflies span:nth-child(9) { width: 8px; height: 8px; top: 28%; left: 25%; animation-delay: 4s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
-  .fireflies span:nth-child(10) { top: 5%; left: 104%; animation-delay: 4.5s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .lucioles span:nth-child(1) { width: 13px; height: 13px; top: 43%; left: 60%; animation-delay: 0s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #e4d0fa 0%, transparent 70%);}
+  .lucioles span:nth-child(2) { width: 10px; height: 10px; top: 30%; left: 70%; animation-delay: 0.5s; animation: glow2 4s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .lucioles span:nth-child(3) { top: 42%; left: 59%; animation-delay: 1s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #EDF9FA 0%, transparent 70%);}
+  .lucioles span:nth-child(4) { width: 6px; height: 6px; top: 430%; left: -190%; animation-delay: 1.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffe2fd 0%, transparent 70%);}
+  .lucioles span:nth-child(5) { top: 20%; left: 60%; animation-delay: 2s; animation: glow5 4s infinite ease-in-out; background: radial-gradient(circle, #e9d6ff 0%, transparent 70%);}
+  .lucioles span:nth-child(6) { width: 10px; height: 10px; top: 80%; left: 99%; animation-delay: 2.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ecdaff 0%, transparent 70%);}
+  .lucioles span:nth-child(7) { top: 44%; left: 34%; animation-delay: 3s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #f6eeff 0%, transparent 70%);}
+  .lucioles span:nth-child(8) { width: 10px; height: 10px; top: 50%; left: 35%; animation-delay: 3.5s; animation: glow4 3.5s infinite ease-in-out; background: radial-gradient(circle, #ffffff 0%, transparent 70%);}
+  .lucioles span:nth-child(9) { width: 8px; height: 8px; top: 28%; left: 25%; animation-delay: 4s; animation: glow1 3s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
+  .lucioles span:nth-child(10) { top: 5%; left: 104%; animation-delay: 4.5s; animation: glow3 2.5s infinite ease-in-out; background: radial-gradient(circle, #c0ecfc 0%, transparent 70%);}
   
 
   @keyframes glow1 {
@@ -207,8 +205,7 @@ button {
     display: none;
   }
 
-  #bloc-quiz {
-    border: 3px solid green;
+  #page-quiz-container {
     background-image:url(Ressources/Images/pine-forest.jpg);
     width: 100%;
     height: 100vh;
@@ -224,30 +221,88 @@ button {
     align-items: center;
   }
 
-  #bloc-quiz.visible {
+  #page-quiz-container.visible {
     opacity: 1;
   }
 
   .brume {
     z-index: 10;
     position: absolute;
+    opacity: 0.75;
     width: 100%;
     height: 100%;
     max-height: 100vh;
     background-image: url(Ressources/Images/smoke.png);
     background-position: center;
     background-size: cover;
-    animation: bougerBrume 12s infinite linear;
+    animation: bougerBrume 10s infinite linear;
     pointer-events: none;
   }
 
   @keyframes bougerBrume {
     0% { transform: translateY(0); }
-    50% { transform: translateY(18px); }
+    50% { transform: translateY(17px); }
     100% { transform: translateY(0); }
   }
 
-  .carte-question {
-    z-index: 5;
-    border: 3px solid blue;
+  .bloc-questionreponse {
+    background: rgba( 255, 255, 245, 0.26);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    width: 55%;
+    min-width: 450px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 15px;
   }
+
+  .bloc-questionreponse h2 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #2e3440;
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .bloc-questionreponse p{
+    width: 100%;
+    color: #312d3d;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .bloc-reponses {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .bouton-reponse {
+    width: 250px; /* fixe */
+    height: 60px; /* fixe */
+    font-size: 18px; /* fixe mais assez grand */
+    font-family: 'Cinzel', serif;
+    border-radius: 12px;
+    background: rgba(255, 255, 245, 0.2);
+    backdrop-filter: blur(4px);
+    color: #2e3440;
+    border: 1px solid rgba(255,255,255,0.3);
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s, transform 0.3s;
+}
+
+.bouton-reponse:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
