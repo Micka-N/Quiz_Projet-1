@@ -72,46 +72,46 @@ const questions = [
     },
     {
         titre: "✧ Question 7 ✧",
-        question: "En marchant dans la forêt brumeuse, tu entends un bruit étrange dans les feuillages. Que fais-tu ?",
-        fond: "url('Ressources/Images/pine-forest.jpg')",
+        question: "Tu tombes sur un coffre fermé par une énigme ancienne. Tu...",
+        fond: "url('Ressources/Images/coffre.jpg')",
         reponses: [
-            { icone: "🔍", texte: "J’observe calmement sans bouger."},
-            { icone: "😂", texte: "J’imite le bruit pour rigoler."},
-            { icone: "🛡️", texte: "J’avance prudemment, prêt à aider."},
-            { icone: "🦊", texte: "Je change discrètement de chemin."},
+            { icone: "🦉", texte: "Je réfléchis aux symboles en silence."},
+            { icone: "🐒", texte: "Je teste plein de combinaisons au hasard."},
+            { icone: "🐉", texte: "J’essaie d’ouvrir avec la force brute."},
+            { icone: "🦊", texte: "Je cherche discrètement des indices."},
         ]
     },
     {
         titre: "✧ Question 8 ✧",
-        question: "En marchant dans la forêt brumeuse, tu entends un bruit étrange dans les feuillages. Que fais-tu ?",
-        fond: "url('Ressources/Images/pine-forest.jpg')",
+        question: "Une vieille dame dans les bois te demande de l’aide pour transporter un panier. Tu...",
+        fond: "url('Ressources/Images/vieilleDame.jpg')",
         reponses: [
-            { icone: "🔍", texte: "J’observe calmement sans bouger."},
-            { icone: "😂", texte: "J’imite le bruit pour rigoler."},
-            { icone: "🛡️", texte: "J’avance prudemment, prêt à aider."},
-            { icone: "🦊", texte: "Je change discrètement de chemin."},
+            { icone: "🛡️", texte: "Je porte immédiatement son panier."},
+            { icone: "🐒", texte: "Je demande une récompense en riant."},
+            { icone: "🐦", texte: "Je l’accompagne jusqu’à chez elle."},
+            { icone: "🦉", texte: "Je reste méfiant mais j’aide."},
         ]
     },
     {
         titre: "✧ Question 9 ✧",
-        question: "En marchant dans la forêt brumeuse, tu entends un bruit étrange dans les feuillages. Que fais-tu ?",
-        fond: "url('Ressources/Images/pine-forest.jpg')",
+        question: "Tu dois transmettre un message très important. Tu...",
+        fond: "url('Ressources/Images/message.jpg')",
         reponses: [
-            { icone: "🔍", texte: "J’observe calmement sans bouger."},
-            { icone: "😂", texte: "J’imite le bruit pour rigoler."},
-            { icone: "🛡️", texte: "J’avance prudemment, prêt à aider."},
-            { icone: "🦊", texte: "Je change discrètement de chemin."},
+            { icone: "🦊", texte: "J’organise un trajet discret."},
+            { icone: "🐉", texte: "Je cours livrer le message sans attendre."},
+            { icone: "🐺", texte: "Je demande un compagnon pour plus de sûreté."},
+            { icone: "🐒", texte: "Je le transmets par une chanson codée."},
         ]
     },
     {
         titre: "✧ Question 10 ✧",
-        question: "En marchant dans la forêt brumeuse, tu entends un bruit étrange dans les feuillages. Que fais-tu ?",
-        fond: "url('Ressources/Images/pine-forest.jpg')",
+        question: "La forêt est plongée dans une nuit magique. Des lucioles colorées te montrent le chemin. Tu...",
+        fond: "url('Ressources/Images/lucioles.jpg')",
         reponses: [
-            { icone: "🔍", texte: "J’observe calmement sans bouger."},
-            { icone: "😂", texte: "J’imite le bruit pour rigoler."},
-            { icone: "🛡️", texte: "J’avance prudemment, prêt à aider."},
-            { icone: "🦊", texte: "Je change discrètement de chemin."},
+            { icone: "🐒", texte: "Je les suis en dansant joyeusement."},
+            { icone: "🦉", texte: "Je note leur trajectoire avec soin."},
+            { icone: "🐺", texte: "J’attends que tout le groupe soit prêt."},
+            { icone: "🐉", texte: "Je fonce en suivant les lumières."},
         ]
     },
     {
