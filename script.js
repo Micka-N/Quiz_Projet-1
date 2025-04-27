@@ -148,10 +148,7 @@ const questions = [
         titre.innerText = questions[index].titre;
         texte.innerText = questions[index].question;
         boutons.forEach((bouton, i) => {
-            const icone = bouton.querySelector(".icone-rep");
             const texteRep = bouton.querySelector(".texte-rep");
-
-            icone.innerText = questions[index].reponses[i].icone;
             texteRep.innerText = questions[index].reponses[i].texte;
         });
 

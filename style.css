@@ -309,11 +309,6 @@ body {
     transition: all 0.3s, transform 0.3s;
 }
 
-  .icone-rep {
-    margin-right: 4px;
-    align-self: flex-start;
-  }
-
   .text-rep {
     text-align: center;
   }
